@@ -1,0 +1,22 @@
+:root{
+    --main:#88BBAF;
+    --main-light:#B8F5E7;
+    --accent:#CD6346;
+    -accent-light:#F9E4DD;
+    --dark-gray:#7E8594;
+    --gray:#C8C8C8;
+    --light-gray:#D9D9D9;
+    --purple:#8A58CA;
+    --dark-blue:#6773B2;
+    --light-blue:#B8BEF5;
+    --teal:#A1CDD0;
+    --teal-light:#DDF7F9;
+    --off-white:#F8F5ED;
+}
+*{
+    font-family: 'Sansita One';
+    color: #474747;
+}
+body{
+    background-color: var(--off-white);
+}
