@@ -12,7 +12,7 @@
       src="https://kit.fontawesome.com/3466402afb.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Admin</title>
   </head>
   <body>
     <div id="nav" class="nav-bar">
@@ -20,11 +20,12 @@
         <div class="child">
           <i class="fa-solid fa-utensils logo dark-gray-bg"></i>
         </div>
-        <div class="child"><button class="dark-gray-bg">Login</button></div>
+        <div class="child"><button class="dark-gray-bg">Logout</button></div>
       </div>
       <ul class="nav-items">
         <li><i class="hr-lines hidden"></i>Home</li>
-        <li><i class="hr-lines"></i>Restaurants</li>
+        <li><i class="hr-lines hidden"></i>Restaurants</li>
+        <li><i class="hr-lines"></i>Profile</li>
       </ul>
       <div class="foot">
         <div class="foot-items">
@@ -40,19 +41,19 @@
         <div>
           <h1>Users</h1>
         </div>
-        <div class="">
-          <button class="dark-gray-bg">Add</button>
-          <button class="dark-gray-bg">Remove</button>
+        <div class="admin-panel-buttons child flex-space-around">
+          <div><button class="dark-blue-bg admin-panel-btn">Add</button></div>
+          <div><button class="dark-blue-bg admin-panel-btn">Remove</button></div>
         </div>
       </div>
       <div class="admin-panel-child -child2 column child flex-space-around">
         <div>
           <h1>Restaurants</h1>
         </div>
-        <div>
-            <button class="dark-gray-bg">Add</button>
-            <button class="dark-gray-bg">Remove</button>
-        </div>
+        <div class="admin-panel-buttons child flex-space-around">
+            <div><button class="dark-blue-bg admin-panel-btn">Add</button></div>
+            <div><button class="dark-blue-bg admin-panel-btn">Remove</button></div>
+          </div>
       </div>
     </div>
   </body>
