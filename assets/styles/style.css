@@ -24,8 +24,8 @@ body {
 ul {
   list-style-type: none;
 }
-ul li{
-    padding: 20px;
+ul li {
+  padding: 20px;
 }
 button {
   border-radius: 50px;
@@ -35,10 +35,10 @@ button {
   height: fit-content;
 }
 /*navbar*/
-.logo{
-    font-size: 35px;
-    padding:15px;
-    border-radius: 100%;
+.logo {
+  font-size: 35px;
+  padding: 15px;
+  border-radius: 100%;
 }
 .head {
   padding: 20px;
@@ -97,10 +97,13 @@ button {
 .flex-space-between {
   justify-content: space-between;
 }
+.flex-space-around {
+  justify-content: space-around;
+}
 
 /*hide */
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
 /*backgorund colors*/
@@ -143,4 +146,29 @@ button {
 .white-text {
   color: white;
   padding: 20px;
+}
+
+.admin-panel {
+  float: right;
+  position: absolute;
+  height: 80%;
+  width: 67%;
+  bottom: 0;
+  right: 30px;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.column{
+  flex-direction: column;
+}
+
+.admin-panel-child{ 
+  margin-top:80px ;
+  background-color: white;
+  width: 70%;
+  height: 25%;
+  border-radius:20px ;
+}
+.-child2{ 
+  margin-top:-100px;
 }
