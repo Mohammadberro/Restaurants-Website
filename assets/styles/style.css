@@ -1,22 +1,146 @@
-:root{
-    --main:#88BBAF;
-    --main-light:#B8F5E7;
-    --accent:#CD6346;
-    -accent-light:#F9E4DD;
-    --dark-gray:#7E8594;
-    --gray:#C8C8C8;
-    --light-gray:#D9D9D9;
-    --purple:#8A58CA;
-    --dark-blue:#6773B2;
-    --light-blue:#B8BEF5;
-    --teal:#A1CDD0;
-    --teal-light:#DDF7F9;
-    --off-white:#F8F5ED;
+:root {
+  --main: #88bbaf;
+  --main-light: #b8f5e7;
+  --accent: #cd6346;
+  -accent-light: #f9e4dd;
+  --dark-gray: #7e8594;
+  --gray: #c8c8c8;
+  --light-gray: #d9d9d9;
+  --purple: #8a58ca;
+  --dark-blue: #6773b2;
+  --light-blue: #b8bef5;
+  --teal: #a1cdd0;
+  --teal-light: #ddf7f9;
+  --off-white: #f8f5ed;
 }
-*{
-    font-family: 'Sansita One';
-    color: #474747;
+* {
+  color: #474747;
+  font-family: "Sansita One";
+  margin: 0px;
 }
-body{
-    background-color: var(--off-white);
+body {
+  background-color: var(--off-white);
+}
+ul {
+  list-style-type: none;
+}
+ul li{
+    padding: 20px;
+}
+button {
+  border-radius: 50px;
+  border-color: transparent;
+  font-size: 20px;
+  width: 100px;
+  height: fit-content;
+}
+/*navbar*/
+.logo{
+    font-size: 35px;
+    padding:15px;
+    border-radius: 100%;
+}
+.head {
+  padding: 20px;
+}
+.nav-bar {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 100%;
+  width: 30%;
+  position: fixed;
+}
+.nav-items {
+  font-size: 26px;
+}
+/*footer*/
+.foot {
+  background-color: black;
+  margin-top: 70%;
+  width: 100%;
+  height: 30%;
+  border-radius: 0px 20px 20px 0px;
+}
+.foot-items {
+  font-size: 40px;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.hr-lines {
+  position: relative;
+  max-width: 50px;
+  margin-right: 150px;
+  text-align: center;
+}
+
+.hr-lines:before {
+  content: " ";
+  height: 5px;
+  width: 130px;
+  border-radius: 5px;
+  background: #474747;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+/*flex box*/
+.container {
+  display: flex;
+}
+.child {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+
+/*hide */
+.hidden{
+    display: none;
+}
+
+/*backgorund colors*/
+.main-bg {
+  background-color: var(--main);
+}
+.main-light-bg {
+  background-color: var(--main-light);
+}
+.accent-bg {
+  background-color: var(--accent);
+}
+.accent-light-bg {
+  background-color: var(--accent-light);
+}
+.dark-gray-bg {
+  background-color: var(--dark-gray);
+  color: white;
+}
+.gray-bg {
+  background-color: var(--gray);
+}
+.light-gray-bg {
+  background-color: var(--light-gray);
+}
+.dark-blue-bg {
+  background-color: var(--dark-blue);
+  color: white;
+}
+.blue-bg {
+  background-color: var(--blue);
+}
+.light-blue-bg {
+  background-color: var(--light-blue);
+}
+.purple-bg {
+  background-color: var(--purple);
+}
+
+.white-text {
+  color: white;
+  padding: 20px;
 }
