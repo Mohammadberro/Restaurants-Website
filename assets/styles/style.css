@@ -39,6 +39,7 @@ ul li{
 input[type="text"]{
     border-radius: 50px;
     border-color: transparent;
+
 }
 button {
   border-radius: 50px;
@@ -189,6 +190,10 @@ button {
 .flex-space-between {
   justify-content: space-between;
 }
+.flex-space-around {
+  justify-content: space-around;
+}
+
 .flex-space-evenly {
   justify-content: space-evenly;
 }
@@ -200,8 +205,12 @@ button {
     width: 100%;
     margin-top: 5%;
 }
+
 .left{
     text-align: right;
+
+.column{
+  flex-direction: column;
 }
 /*hide */
 .hidden{
@@ -402,3 +411,5 @@ button {
   align-self: center;
 }
 /* for login and signup */
+
+
