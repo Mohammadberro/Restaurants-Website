@@ -421,3 +421,27 @@ button {
 }
 /* for login and signup */
 
+/* for index page slideshow*/
+
+
+
+.slider-wrapper .image-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.slider-wrapper .image-list .image-item{
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.silder-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+
