@@ -206,10 +206,10 @@ let res_name = [
   "Restaurant-Name",
 ];
 let menu_item = {
-  platte_name: "Burgur",
+  plate_name: "Burgur",
   price: "10$",
 };
-let res_menue = {
+let res_menue = [
   menu_item,
   menu_item,
   menu_item,
@@ -221,8 +221,8 @@ let res_menue = {
   menu_item,
   menu_item,
   menu_item,
-};
-let res_menus = {
+];
+let res_menus = [
   res_menue,
   res_menue,
   res_menue,
@@ -323,24 +323,24 @@ let res_menus = {
   res_menue,
   res_menue,
   res_menue,
-};
+];
 localStorage.setItem("img_src", JSON.stringify(img_src));
-localStorage.setItem("res_name",JSON.stringify(res_name));
-localStorage.setItem("res_menus",JSON.stringify(res_menus));
-localStorage.setItem("login","true")
+localStorage.setItem("res_name", JSON.stringify(res_name));
+localStorage.setItem("res_menus", JSON.stringify(res_menus));
+localStorage.setItem("login", "true");
 
 window.onload = () => {
   let url = window.location.href;
   if (checkSearchURL(url) && !checkDisplayURL(url)) {
     let search = SearchURL(url);
-    loadSearch(search)
+    loadSearch(search);
   }
   if (checkDisplayURL(url)) {
     let rest = SearchURL(url);
-    DisplayRest(rest)
-  }  
-  if(window.location.href.includes("Rest")){
-  loadAllRest();
+    DisplayRest(rest);
+  }
+  if (window.location.href.includes("Rest")) {
+    loadAllRest();
   }
 };
 function checkSearchURL(url) {
@@ -357,25 +357,23 @@ function checkDisplayURL(url) {
     return false;
   }
 }
-function checkLogin(url){
-    if (url.includes("?u=")) {
-        return true;
-      } else {
-        return false;
-      }
+function checkLogin(url) {
+  if (url.includes("?u=")) {
+    return true;
+  } else {
+    return false;
+  }
 }
 function Search(input) {
   let link = window.location.href;
   if (!checkSearchURL(link)) {
     window.location.href += "?s=" + input.value;
   } else {
-    let new_link = "";
+    let new_link = "/assets/pages/Restaurants.html";
     for (let i = 0; i < link.length; i++) {
       if (link[i] == "?") {
         new_link += "?s=" + input.value;
         break;
-      } else {
-        new_link += link[i];
       }
     }
     window.location.href = new_link;
@@ -393,9 +391,8 @@ function SearchURL(input) {
   for (let i = index; i < input; i++) {
     result += input[i];
   }
-  return (result)
+  return result;
 }
-
 
 function favorite() {
   let rest = document.getElementById("favorite");
@@ -408,8 +405,8 @@ function favorite() {
 
 function loadAllRest() {
   let max = 101;
-  let name = JSON.parse(localStorage.getItem("res_name")|| "[]");
-  let src = JSON.parse(localStorage.getItem("img_src")|| "[]");
+  let name = JSON.parse(localStorage.getItem("res_name") || "[]");
+  let src = JSON.parse(localStorage.getItem("img_src") || "[]");
   let div = document.getElementById("Display-Rest");
   for (let i = 0; i < 3; i++) {
     let section = document.createElement("div");
@@ -426,14 +423,13 @@ function loadAllRest() {
       img.classList.add("card-img");
       btn.classList.add("main-light-bg");
 
-      img.src = src[i];     
+      img.src = src[i];
       btn.id = name[i];
       btn.innerText = "Open";
       btn.href = "/assets/pages/DisplayRest.html/";
       btn.onclick = () => {
         window.location.href = "/assets/pages/DisplayRest.html?r=" + btn.id;
       };
- 
 
       img_card.appendChild(img);
       card_body.appendChild(btn);
@@ -447,10 +443,9 @@ function loadAllRest() {
   }
 }
 function loadSearch(res) {
-  let max = 101;
-  let name = Jason.parse(localStorage.getItem("res_name")|| "[]");
-  name = name.split(" ");
-  let src = Jason.parse(localStorage.getItem("img_src")|| "[]");
+  let name = JSON.parse(localStorage.getItem("res_name") || "[]");
+  let src = JSON.parse(localStorage.getItem("img_src") || "[]");
+  let max = name.length;
   let div = document.getElementById("Display-Rest");
   for (let i = 0; i < 3; i++) {
     let section = document.createElement("div");
@@ -487,14 +482,31 @@ function loadSearch(res) {
     div.appendChild(section);
   }
 }
-function DisplayRest(url){
-
-}
-
-if( localStorage.getItem("login")== "true"){
-    setTimeout(()=>{
-        console.log(
-        document.getElementById("profile"));
-    },2000)
-    
+function DisplayRest(url) {
+  let rest = JSON.parse(localStorage.getItem("res_name") || "[]");
+  let src = JSON.parse(localStorage.getItem("img_src") || "[]");
+  let menus = JSON.parse(localStorage.getItem("res_menus") || "[]");
+  let max = rest.length;
+  let result = SearchURL(url);
+  let index = 0;
+  for (let i = 0; i < max; i++) {
+    if (rest[i] == result) {
+      index = i;
+      break;
+    }
   }
+  let name = document.getElementById("textARC");
+  let logo = document.getElementById("res-logo");
+  let menu = document.getElementById("Menu");
+
+  name.innerText = rest[index];
+  logo.src = src[index];
+  let list = document.createElement("ul");
+  let menu_list = menus[index];
+  for (i in menu_list) {
+    let item = document.createElement("li");
+    item.innerText = menu_list[i].plate_name + " " + menu_list[i].price;
+    list.appendChild(item);
+  }
+  menu.appendChild(list);
+}

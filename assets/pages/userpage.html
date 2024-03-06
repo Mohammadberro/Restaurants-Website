@@ -19,22 +19,43 @@
     <div id="nav" class="nav-bar">
       <div class="head container flex-space-between">
         <div class="child">
-          <i class="fa-solid fa-utensils logo dark-gray-bg"></i>
+          <a href="/index.html" id="logo"
+            ><i class="fa-solid fa-utensils logo dark-gray-bg"></i
+          ></a>
         </div>
-        <div class="child nav-items" id="user-name">User Name</div>
-        <div class="child"><button class="dark-gray-bg">Logout</button></div>
+        <div class="child"><button class="dark-gray-bg"><a href="/assets/pages/signin.html" class="white-text">Login</a></button></div>
       </div>
       <ul class="nav-items">
-        <li><i class="hr-lines hidden"></i>Home</li>
-        <li><i class="hr-lines hidden"></i>Restaurants</li>
-        <li><i class="hr-lines"></i>Profile</li>
+        <li>
+          <a href="/index.html" class="transparent"
+            ><i class="hr-lines" data-nav="nav-buttons"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="/assets/pages/Restaurants.html" class="transparent"
+            ><i class="hr-lines hidden" data-nav="nav-buttons"></i>Restaurants</a
+          >
+        </li>
+        <li class="hidden" id="pofile">
+          <a href="/assets/pages/Restaurants.html" class="transparent"
+            ><i class="hr-lines hidden" data-nav="nav-buttons"></i>Profile</a
+          >
+        </li>
       </ul>
       <div class="foot">
         <div class="foot-items">
-          <i class="fa-brands fa-facebook white-text"></i>
-          <i class="fa-brands fa-tiktok white-text"></i>
-          <i class="fa-brands fa-instagram white-text"></i>
-          <i class="fa-brands fa-twitter white-text"></i>
+          <a href="#" class="socail"
+            ><i class="fa-brands fa-facebook white-text"></i
+          ></a>
+          <a href="#" class="socail">
+            <i class="fa-brands fa-tiktok white-text"></i
+          ></a>
+          <a href="#" class="socail"
+            ><i class="fa-brands fa-instagram white-text"></i
+          ></a>
+          <a href="#" class="socail"
+            ><i class="fa-brands fa-twitter white-text"></i
+          ></a>
         </div>
       </div>
     </div>
