@@ -30,3 +30,12 @@ function check(item) {
   }
   
 }
+function favorite(){
+    let rest = document.getElementById("favorite");
+    if(rest.style.filter != "grayscale(1)"){
+    rest.style.filter = "grayscale(1)";
+    }
+    else{
+        rest.style.filter = "grayscale(0)";
+    }
+}
