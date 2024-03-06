@@ -182,36 +182,6 @@ button {
   width: 130px;
 }
 
-.admin-panel {
-  float: right;
-  position: absolute;
-  height: 80%;
-  width: 67%;
-  bottom: 0;
-  right: 30px;
-  border-radius: 20px;
-  flex-direction: column;
-}
-
-.admin-panel-child{ 
-  margin-top:80px ;
-  background-color: white;
-  width: 70%;
-  height: 25%;
-  border-radius:20px ;
-}
-.-child2{ 
-  margin-top:-100px;
-}
-.admin-panel-buttons{
- 
-  width: 100%;
-}
-.admin-panel-btn{
-  font-size: 26px;
-  width: 130px;
-}
-
 /* For login and signup */
 .primary-input{
   border-radius: 50px;
