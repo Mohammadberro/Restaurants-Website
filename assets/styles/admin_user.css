@@ -53,9 +53,25 @@
   height: 250px;
   width: 250px;
 }
-.user-info-content{
-width: 50%;
-display: flex;
-justify-content: center;
-
+.user-info-content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.popup {
+  position: absolute;
+  border-radius: 20%;
+  width: 600px;
+  height: 500px;
+  border: 5px solid black;
+}
+.popup-add-user {
+  height: 70%;
+}
+.panel-inputs{
+  height: 50px;
+  width: 400px;
+}
+.popup-add-restaurant{
+  height: 70%;
 }
