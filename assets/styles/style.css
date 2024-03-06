@@ -86,8 +86,12 @@ button {
     margin-left: 30%;
 }
 .display-container{
+    flex: 1;
+    display: flex;
     overflow-y:auto;
+    height: 100%;
 }
+
 .big-card{
     border-radius: 20px;
     width: 95%;
