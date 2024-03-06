@@ -71,6 +71,8 @@
 .panel-inputs{
   height: 50px;
   width: 400px;
+  font-size: 20px;
+  padding: 10px;
  
 }
 .popup-add-restaurant{
