@@ -49,8 +49,6 @@ button {
 }
 button:hover{
     filter: brightness(80%);
-
-    
 }
 /*navbar*/
 .transparent:hover{

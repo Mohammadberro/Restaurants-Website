@@ -502,10 +502,10 @@ function DisplayRest(url) {
   name.innerText = rest[index];
   logo.src = src[index];
   let list = document.createElement("ul");
-  let menu_list = menus[index]
+  let menu_list = menus[index];
   for (i in menu_list) {
     let item = document.createElement("li");
-    item.innerText = menu_list[i].plate_name + " " +menu_list[i].price;
+    item.innerText = menu_list[i].plate_name + " " + menu_list[i].price;
     list.appendChild(item);
   }
   menu.appendChild(list);
