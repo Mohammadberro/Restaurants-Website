@@ -26,6 +26,8 @@ ul {
 }
 ul li {
   padding: 20px;
+ul li {
+  padding: 20px;
 }
 button {
   border-radius: 50px;
@@ -35,6 +37,10 @@ button {
   height: fit-content;
 }
 /*navbar*/
+.logo {
+  font-size: 35px;
+  padding: 15px;
+  border-radius: 100%;
 .logo {
   font-size: 35px;
   padding: 15px;
@@ -104,8 +110,17 @@ button {
 .column{
   flex-direction: column;
 }
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.column{
+  flex-direction: column;
+}
 
 /*hide */
+.hidden {
+  display: none;
 .hidden {
   display: none;
 }
@@ -151,6 +166,159 @@ button {
   color: white;
   padding: 20px;
 }
+
+.admin-panel {
+  float: right;
+  position: absolute;
+  height: 80%;
+  width: 67%;
+  bottom: 0;
+  right: 30px;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.admin-panel-child{ 
+  margin-top:80px ;
+  background-color: white;
+  width: 70%;
+  height: 25%;
+  border-radius:20px ;
+}
+.-child2{ 
+  margin-top:-100px;
+}
+.admin-panel-buttons{
+ 
+  width: 100%;
+}
+.admin-panel-btn{
+  font-size: 26px;
+  width: 130px;
+}
+
+/* For login and signup */
+.primary-input{
+  border-radius: 50px;
+  height: fit-content;
+  width: fit-content;
+  max-width: fit-content;
+  border: 0px;
+  background-color: var(--light-gray);
+  padding: 20px ;
+  font-size: 26px;
+  outline: none;
+}
+
+.primary-input::placeholder {
+  color: var(--gray);
+  font-size: 18px;
+  color: #5E5E5E;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign-in-form{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  padding: 24px;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.primary-login-btn {
+  height: 60px;
+  width: 276px;
+  background-color: var(--dark-gray);
+  color: white;
+  font-size: 26px;
+}
+.user-pass-icons{
+  padding-left: 20px;
+  font-size: 26px;
+  border-radius: 50px;
+  background-color: var(--light-gray);
+}
+.login-section-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.login-section-footer{
+  background-color: black;
+  width: 100%;
+  margin-top: auto;
+  /* height: 30%; */
+  /* border-radius: 0px 20px 20px 0px; */
+}
+
+.login-section-body{
+  display: flex;
+  background-color: var(--off-white);
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  /* justify-content: center; */
+}
+
+.login-foot-items {
+  font-size: 40px;
+  text-align: center;
+}
+
+.login-logo{
+  margin: 15px;
+  font-size: 35px;
+  padding:15px;
+  border-radius: 100%;
+  text-decoration:none;
+}
+
+.invisible-logo{
+  padding-right: 15px;
+  margin-right: 15px;
+}
+
+.pass-input{
+  max-width: 236.5px;
+}
+
+.pre-signup{
+  font-size: 14px;
+}
+
+.anchor-signup{
+  text-decoration: none;
+  color: blue;
+}
+
+.signup-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+/* for login and signup */
 
 .admin-panel {
   float: right;
