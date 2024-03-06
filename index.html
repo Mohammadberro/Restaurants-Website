@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/3466402afb.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="/assets/scripts/index.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -23,21 +24,21 @@
             ><i class="fa-solid fa-utensils logo dark-gray-bg"></i
           ></a>
         </div>
-        <div class="child"><a href="./assets/pages/signin.html" class="dark-gray-bg anchor-login">Login</a></div>
+        <div class="child"><button class="dark-gray-bg"><a href="/assets/pages/signin.html" class="white-text">Login</a></button></div>
       </div>
       <ul class="nav-items">
         <li>
-          <a href="/index.html"
+          <a href="/index.html" class="transparent"
             ><i class="hr-lines" data-nav="nav-buttons"></i>Home</a
           >
         </li>
         <li>
-          <a href="/assets/pages/Restaurants.html"
+          <a href="/assets/pages/Restaurants.html" class="transparent"
             ><i class="hr-lines hidden" data-nav="nav-buttons"></i>Restaurants</a
           >
         </li>
         <li class="hidden" id="pofile">
-          <a href="/assets/pages/Restaurants.html"
+          <a href="/assets/pages/Restaurants.html" class="transparent"
             ><i class="hr-lines hidden" data-nav="nav-buttons"></i>Profile</a
           >
         </li>
@@ -60,18 +61,39 @@
       </div>
     </div>
     <div class="main-content">
-      <div class="slider-containter">
-        <div class="slider-wrapper-holder">
-          <div class="slider-wrapper">
-            <div class="image-list">
-              <img src="./assets/images/Main Menu Slider/slide1.jpg" 
-              alt="slide-1" class="imag-item">
-              <img src="./assets/images/Main Menu Slider/slide2.jpg" 
-              alt="slide-2" class="imag-item">
-              <img src="./assets/images/Main Menu Slider/slide3.jpg" 
-              alt="slide-3" class="imag-item">
-              <img src="./assets/images/Main Menu Slider/slide4.jpg" 
-              alt="slide-4" class="imag-item">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="assets/images/slider/slide1.jpg" class="test">
+          <div class="text">Caption Text</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="assets/images/slider/slide2.jpg" class="test">
+          <div class="text">Caption Two</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="assets/images/slider/slide3.jpg" class="test">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      </div>
+          </div>
+              </div>
             </div>
           </div>
         </div>
