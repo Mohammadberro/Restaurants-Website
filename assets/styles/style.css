@@ -13,31 +13,37 @@
   --teal-light: #ddf7f9;
   --off-white: #f8f5ed;
 }
+
 * {
   color: #474747;
   font-family: "Sansita One";
   margin: 0px;
 }
+
 body {
   background-color: var(--off-white);
 }
-a{
-    text-decoration: none;
-    border-radius: 20px;
-    padding: 5px;
-    
+
+a {
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 5px;
+
 }
 
 ul {
   list-style-type: none;
 }
-ul li{
-    padding: 20px;
+
+ul li {
+  padding: 20px;
 }
-input[type="text"]{
-    border-radius: 50px;
-    border-color: transparent;
+
+input[type="text"] {
+  border-radius: 50px;
+  border-color: transparent;
 }
+
 button {
   border-radius: 50px;
   border-color: transparent;
@@ -47,21 +53,26 @@ button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
-button:hover{
-    filter: brightness(80%);
+
+button:hover {
+  filter: brightness(80%);
 }
+
 /*navbar*/
-.transparent:hover{
-    background-color: transparent;
+.transparent:hover {
+  background-color: transparent;
 }
-.logo{
-    font-size: 35px;
-    padding:15px;
-    border-radius: 100%;
+
+.logo {
+  font-size: 35px;
+  padding: 15px;
+  border-radius: 100%;
 }
+
 .head {
   padding: 20px;
 }
+
 .nav-bar {
   border-radius: 20px;
   background-color: white;
@@ -70,86 +81,98 @@ button:hover{
   width: 30%;
   position: fixed;
 }
+
 .nav-items {
   font-size: 26px;
 }
-.socail{
-    border-radius: 20px;
+
+.socail {
+  border-radius: 20px;
 }
-.socail:hover{
-    background-color: var(--main);
+
+.socail:hover {
+  background-color: var(--main);
 }
 
 /* body*/
-.search-bar{
-    border-radius:20px;
-    padding: 10px;
-    padding-left: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.main-content{
-    padding: 10px;
-    margin-left: 30%;
-}
-.display-container{
-    flex: 1;
-    display: flex;
-    overflow-y:auto;
-    height: 100%;
+.search-bar {
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.big-card{
-    border-radius: 20px;
-    width: 95%;
-    height:100%;
-    max-height: 100%;
-    margin-top: 10px;
-    align-items: center;
-    padding: 10px;
+.main-content {
+  padding: 10px;
+  margin-left: 30%;
 }
-.card{
-    background-color: white;
-    border-radius: 20px;
-    align-content: center;
-    padding: 20px;
-    width:fit-content;
-    margin-top: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.display-container {
+  flex: 1;
+  display: flex;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.big-card {
+  border-radius: 20px;
+  width: 95%;
+  height: 100%;
+  max-height: 100%;
+  margin-top: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  align-content: center;
+  padding: 20px;
+  width: fit-content;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
 }
-.card-img{
-    border-radius: 20px;
-    height:200px;
-    width: 170px;
+
+.card-img {
+  border-radius: 20px;
+  height: 200px;
+  width: 170px;
 }
-.card-body{
-    text-align: center;
-    padding: 10px;
+
+.card-body {
+  text-align: center;
+  padding: 10px;
 }
-.res-logo{
-    width: 400px;
-    height: 300px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.res-logo {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
-.favorite{
-    background-color: pink;
-    color: hotpink;
-    border-radius: 100%;
-    font-size: 30px;
-    width: fit-content;
-    height: fit-content;
-    padding: 5px;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.favorite {
+  background-color: pink;
+  color: hotpink;
+  border-radius: 100%;
+  font-size: 30px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
-.menu{
-    text-align: left;
-    font-size: 20px;
+
+.menu {
+  text-align: left;
+  font-size: 20px;
 }
+
 /*footer*/
 .foot {
   background-color: black;
@@ -158,6 +181,7 @@ button:hover{
   height: 30%;
   border-radius: 0px 20px 20px 0px;
 }
+
 .foot-items {
   font-size: 40px;
   padding-top: 5%;
@@ -165,17 +189,18 @@ button:hover{
 }
 
 /* Shapes */
-.circle{
-    margin-left: 18%;  
-    margin-top: -9%;
-    border-radius: 100%;
-    height: 400px;
-    width: 400px;
-    text-align: center;
-    padding-top: 40px;
-    position: absolute;
-    z-index: -2;
+.circle {
+  margin-left: 18%;
+  margin-top: -9%;
+  border-radius: 100%;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  padding-top: 40px;
+  position: absolute;
+  z-index: -2;
 }
+
 .hr-lines {
   position: relative;
   max-width: 50px;
@@ -193,18 +218,22 @@ button:hover{
   top: 50%;
   left: 0;
 }
+
 /*flex box*/
 .container {
   display: flex;
 }
+
 .child {
   display: flex;
   align-items: center;
   align-content: center;
 }
+
 .flex-space-between {
   justify-content: space-between;
 }
+
 .flex-space-around {
   justify-content: space-around;
 }
@@ -212,59 +241,72 @@ button:hover{
 .flex-space-evenly {
   justify-content: space-evenly;
 }
-.center{
-    text-align: center;
-    align-content: center;
-    font-size: 36px;
-    padding-top: 10%;
-    width: 100%;
-    margin-top: 5%;
+
+.center {
+  text-align: center;
+  align-content: center;
+  font-size: 36px;
+  padding-top: 10%;
+  width: 100%;
+  margin-top: 5%;
 }
 
-.left{
-    text-align: right;
+.left {
+  text-align: right;
 }
-.column{
+
+.column {
   flex-direction: column;
 }
+
 /*hide */
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
 /*backgorund colors*/
 .main-bg {
   background-color: var(--main);
 }
+
 .main-light-bg {
   background-color: var(--main-light);
 }
+
 .accent-bg {
   background-color: var(--accent);
 }
+
 .accent-light-bg {
   background-color: var(--accent-light);
 }
+
 .dark-gray-bg {
   background-color: var(--dark-gray);
   color: white;
 }
+
 .gray-bg {
   background-color: var(--gray);
 }
+
 .light-gray-bg {
   background-color: var(--light-gray);
 }
+
 .dark-blue-bg {
   background-color: var(--dark-blue);
   color: white;
 }
+
 .blue-bg {
   background-color: var(--blue);
 }
+
 .light-blue-bg {
   background-color: var(--light-blue);
 }
+
 .purple-bg {
   background-color: var(--purple);
 }
@@ -285,34 +327,37 @@ button:hover{
   flex-direction: column;
 }
 
-.admin-panel-child{ 
-  margin-top:80px ;
+.admin-panel-child {
+  margin-top: 80px;
   background-color: white;
   width: 70%;
   height: 25%;
-  border-radius:20px ;
+  border-radius: 20px;
 }
-.-child2{ 
-  margin-top:-100px;
+
+.-child2 {
+  margin-top: -100px;
 }
-.admin-panel-buttons{
- 
+
+.admin-panel-buttons {
+
   width: 100%;
 }
-.admin-panel-btn{
+
+.admin-panel-btn {
   font-size: 26px;
   width: 130px;
 }
 
 /* For login and signup */
-.primary-input{
+.primary-input {
   border-radius: 50px;
   height: fit-content;
   width: fit-content;
   max-width: fit-content;
   border: 0px;
   background-color: var(--light-gray);
-  padding: 20px ;
+  padding: 20px;
   font-size: 26px;
   outline: none;
 }
@@ -329,7 +374,7 @@ button:hover{
   align-items: center;
 }
 
-#sign-in-form{
+#sign-in-form {
   margin-top: 5%;
   display: flex;
   flex-direction: column;
@@ -341,12 +386,38 @@ button:hover{
   padding: 24px;
 }
 
-.inputs{
+.inputs {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+#search-icon-container {
+  cursor: pointer;
+  position: absolute;
+  top: 3%;
+  right: 1%;
+}
+
+#search-icon-container:hover {
+  transform: scale(1.1);
+}
+
+.view-more-btn-container {
+  width: 100%;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.view-more-btn {
+  cursor: pointer;
+  height: 60px;
+  width: 276px;
+  background-color: #88BBAF;
+  color: white;
+  font-size: 26px;
 }
 
 .primary-login-btn {
@@ -356,13 +427,15 @@ button:hover{
   color: white;
   font-size: 26px;
 }
-.user-pass-icons{
+
+.user-pass-icons {
   padding-left: 20px;
   font-size: 26px;
   border-radius: 50px;
   background-color: var(--light-gray);
 }
-.login-section-container{
+
+.login-section-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -370,7 +443,7 @@ button:hover{
   align-content: center;
 }
 
-.login-section-footer{
+.login-section-footer {
   background-color: black;
   width: 100%;
   margin-top: auto;
@@ -378,7 +451,7 @@ button:hover{
   /* border-radius: 0px 20px 20px 0px; */
 }
 
-.login-section-body{
+.login-section-body {
   display: flex;
   background-color: var(--off-white);
   flex-direction: column;
@@ -393,28 +466,28 @@ button:hover{
   text-align: center;
 }
 
-.login-logo{
+.login-logo {
   margin: 15px;
   font-size: 35px;
-  padding:15px;
+  padding: 15px;
   border-radius: 100%;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.invisible-logo{
+.invisible-logo {
   padding-right: 15px;
   margin-right: 15px;
 }
 
-.pass-input{
+.pass-input {
   max-width: 236.5px;
 }
 
-.pre-signup{
+.pre-signup {
   font-size: 14px;
 }
 
-.anchor-signup{
+.anchor-signup {
   text-decoration: none;
   color: blue;
 }
@@ -425,24 +498,17 @@ button:hover{
   align-items: center;
   align-self: center;
 }
+
 /* for login and signup */
 
 /* Slideshow container */
-/* .slideshow-container {
+.slideshow-container {
   max-width: 500px;
   position: relative;
-  margin: 0 auto;
-  box-sizing:border-box
-} */
-
-.slideshow-container{
-  width: 500px;
-  max-width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 25% auto 0 auto;
+  box-sizing: border-box
 }
+
 
 /* Hide the images by default */
 .mySlides {
@@ -450,8 +516,14 @@ button:hover{
   width: 100%;
 }
 
+.dots-container {
+  text-align: center;
+  margin-top: 1%;
+}
+
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -473,12 +545,13 @@ button:hover{
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
-.text {
+.mySlides .text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -509,7 +582,8 @@ button:hover{
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -519,12 +593,17 @@ button:hover{
   animation-duration: 1.5s;
 }
 
-.test{
+.test {
   width: 100%;
 }
 
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
