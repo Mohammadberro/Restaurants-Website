@@ -23,7 +23,7 @@
             ><i class="fa-solid fa-utensils logo dark-gray-bg"></i
           ></a>
         </div>
-        <div class="child"><button class="dark-gray-bg"><a href="/assets/pages/signin.html" class="white-text">Login</a></button></div>
+        
       </div>
       <ul class="nav-items">
         <li>
@@ -59,33 +59,29 @@
         </div>
       </div>
     </div>
-    <!-- hidden panels  -->
+   
     <div class="panel child flex-space-around purple-bg">
 
-      <div class="popup  container column flex-space-around dark-gray-bg hidden ">
-        <div class="popup-add-user child column flex-space-between hidden">
+       <!-- hidden panels  -->
+      <div class="popup  container column flex-space-around dark-gray-bg hidden " id="admin-panel">
+
+        <!-- add user  -->
+        <div class="popup-info child column flex-space-between hidden" id="adduser-panel">
           <h1>Enter Information</h1>
           <input class="panel-inputs" type="text" name="username" id="add-username" placeholder="Username">
           <input class="panel-inputs" type="text" name="password" id="add-userpass" placeholder="Password">
          <div> <button class="dark-blue-bg " id="add-user">Add</button>
           <button class="dark-blue-bg ">Close</button></div>
         </div>
-
-        <div class="popup-add-restaurant child column flex-space-between hidden">
+         
+        <!-- add restaurants -->
+        <div class="popup-info child column flex-space-between hidden" id="addrest-panel">
           <h1>Enter Information</h1>
           <input class="panel-inputs" type="text" name="username" id="add-restname" placeholder="Username">
           <input class="panel-inputs" type="text" name="password" id="add-restpass" placeholder="Password">
          <div> <button class="dark-blue-bg " id="add=rest">Add</button>
           <button class="dark-blue-bg ">Close</button></div>
         </div>
-
-
-
-
-
-
-
-    
       </div>
 
      
@@ -96,9 +92,9 @@
           <h1>Users</h1>
         </div>
         <div class="admin-panel-buttons child flex-space-around">
-          <div><button class="dark-blue-bg admin-panel-btn">Add</button></div>
+          <div><button class="dark-blue-bg admin-panel-btn" id="">Add</button></div>
           <div>
-            <button class="dark-blue-bg admin-panel-btn">Remove</button>
+            <button class="dark-blue-bg admin-panel-btn" id="">Remove</button>
           </div>
         </div>
       </div>
@@ -108,9 +104,9 @@
           <h1>Restaurants</h1>
         </div>
         <div class="admin-panel-buttons child flex-space-around">
-          <div><button class="dark-blue-bg admin-panel-btn">Add</button></div>
+          <div><button class="dark-blue-bg admin-panel-btn" id="">Add</button></div>
           <div>
-            <button class="dark-blue-bg admin-panel-btn">Remove</button>
+            <button class="dark-blue-bg admin-panel-btn" id="">Remove</button>
           </div>
         </div>
       </div>

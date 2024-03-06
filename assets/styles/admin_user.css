@@ -65,13 +65,15 @@
   height: 500px;
   border: 5px solid black;
 }
-.popup-add-user {
+.popup-info {
   height: 70%;
 }
 .panel-inputs{
   height: 50px;
   width: 400px;
+ 
 }
 .popup-add-restaurant{
   height: 70%;
 }
+
