@@ -23,7 +23,7 @@
             ><i class="fa-solid fa-utensils logo dark-gray-bg"></i
           ></a>
         </div>
-        <div class="child"><button class="dark-gray-bg"><a href="/assets/pages/signin.html" class="white-text">Login</a></button></div>
+      
       </div>
       <ul class="nav-items">
         <li>
@@ -61,6 +61,34 @@
     </div>
 
     <div class="panel child flex-space-around accent-bg">
+
+       <!-- hidden panels  -->
+       <div class="popup  container column flex-space-around dark-gray-bg hidden" id="user-panel">
+
+        <!-- edit username  -->
+        <div class="popup-info child column flex-space-between hidden" id="edit-username-panel">
+          <h1>Enter Information</h1>
+          <input class="panel-inputs" type="text" name="username" id="add-username" placeholder="Username">
+          
+         <div> <button class="dark-blue-bg " id="edit-user">Edit</button>
+          <button class="dark-blue-bg ">Close</button></div>
+        </div> 
+
+       <!-- edit password  -->
+       <div class="popup-info child column flex-space-between hidden " id="edit-pass-panel">
+        <h1>Enter Information</h1>
+        <input class="panel-inputs" type="password" name="password" id="add-userpass" placeholder="New Password">
+        <input class="panel-inputs" type="password" name="password" placeholder="Confirm Password">
+        
+       <div> <button class="dark-blue-bg " id="edit-user">Edit</button>
+        <button class="dark-blue-bg ">Close</button></div>
+      </div>
+
+
+
+      </div>
+
+
       <div class="user-panel-img"><img src="../images/one.avif" /></div>
       <div class="panel-child column child flex-space-around">
         <div>
@@ -85,7 +113,7 @@
           <div class="user-info flex-space-around container">
             <div class="user-info-content"><h1>User name</h1></div>
             <div class="user-info-content">
-              <button class="accent-bg admin-panel-btn" id="edit-name">
+              <button class="accent-bg admin-panel-btn" id="popup-editname">
                 Edit
               </button>
             </div>
@@ -96,7 +124,7 @@
               <h1>Password</h1>
             </div>
             <div class="user-info-content">
-              <button class="accent-bg admin-panel-btn" id="edit-pass">
+              <button class="accent-bg admin-panel-btn" id="popup-editpass">
                 Edit
               </button>
             </div>
