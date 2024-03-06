@@ -2,7 +2,7 @@
   --main: #88bbaf;
   --main-light: #b8f5e7;
   --accent: #cd6346;
-  --accent-light: #f9e4dd;
+  -accent-light: #f9e4dd;
   --dark-gray: #7e8594;
   --gray: #c8c8c8;
   --light-gray: #d9d9d9;
@@ -20,13 +20,12 @@
 }
 body {
   background-color: var(--off-white);
-  display: flex;
 }
 ul {
   list-style-type: none;
 }
-ul li{
-    padding: 20px;
+ul li {
+  padding: 20px;
 }
 button {
   border-radius: 50px;
@@ -36,10 +35,10 @@ button {
   height: fit-content;
 }
 /*navbar*/
-.logo{
-    font-size: 35px;
-    padding:15px;
-    border-radius: 100%;
+.logo {
+  font-size: 35px;
+  padding: 15px;
+  border-radius: 100%;
 }
 .head {
   padding: 20px;
@@ -98,10 +97,17 @@ button {
 .flex-space-between {
   justify-content: space-between;
 }
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.column{
+  flex-direction: column;
+}
 
 /*hide */
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
 /*backgorund colors*/
@@ -146,6 +152,67 @@ button {
   padding: 20px;
 }
 
+.admin-panel {
+  float: right;
+  position: absolute;
+  height: 80%;
+  width: 67%;
+  bottom: 0;
+  right: 30px;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.admin-panel-child{ 
+  margin-top:80px ;
+  background-color: white;
+  width: 70%;
+  height: 25%;
+  border-radius:20px ;
+}
+.-child2{ 
+  margin-top:-100px;
+}
+.admin-panel-buttons{
+ 
+  width: 100%;
+}
+.admin-panel-btn{
+  font-size: 26px;
+  width: 130px;
+}
+
+.admin-panel {
+  float: right;
+  position: absolute;
+  height: 80%;
+  width: 67%;
+  bottom: 0;
+  right: 30px;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.admin-panel-child{ 
+  margin-top:80px ;
+  background-color: white;
+  width: 70%;
+  height: 25%;
+  border-radius:20px ;
+}
+.-child2{ 
+  margin-top:-100px;
+}
+.admin-panel-buttons{
+ 
+  width: 100%;
+}
+.admin-panel-btn{
+  font-size: 26px;
+  width: 130px;
+}
+
+/* For login and signup */
 .primary-input{
   border-radius: 50px;
   height: fit-content;
@@ -266,4 +333,4 @@ button {
   align-items: center;
   align-self: center;
 }
-
+/* for login and signup */
