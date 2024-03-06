@@ -23,22 +23,18 @@
 body {
   background-color: var(--off-white);
 }
-
 a {
   text-decoration: none;
   border-radius: 20px;
   padding: 5px;
-
 }
 
 ul {
   list-style-type: none;
 }
-
 ul li {
   padding: 20px;
 }
-
 input[type="text"] {
   border-radius: 50px;
   border-color: transparent;
@@ -51,9 +47,7 @@ button {
   width: 130px;
   height: fit-content;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
-
 button:hover {
   filter: brightness(80%);
 }
@@ -62,7 +56,6 @@ button:hover {
 .transparent:hover {
   background-color: transparent;
 }
-
 .logo {
   font-size: 35px;
   padding: 15px;
@@ -101,19 +94,26 @@ button:hover {
   padding-left: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .main-content {
   padding: 10px;
   margin-left: 30%;
 }
-
 .display-container {
   flex: 1;
   display: flex;
   overflow-y: auto;
   height: 100%;
+  flex-direction: column;
 }
-
+.display-section {
+  padding-top:10px;
+  padding-left:10%;
+  gap: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  height: 100%;
+}
 .big-card {
   border-radius: 20px;
   width: 95%;
@@ -123,7 +123,6 @@ button:hover {
   align-items: center;
   padding: 10px;
 }
-
 .card {
   background-color: white;
   border-radius: 20px;
@@ -132,29 +131,22 @@ button:hover {
   width: fit-content;
   margin-top: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
 }
-
 .card-img {
   border-radius: 20px;
   height: 200px;
   width: 170px;
 }
-
 .card-body {
   text-align: center;
   padding: 10px;
 }
-
 .res-logo {
   width: 400px;
   height: 300px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
-
 .favorite {
   background-color: pink;
   color: hotpink;
@@ -165,9 +157,7 @@ button:hover {
   padding: 5px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
-
 .menu {
   text-align: left;
   font-size: 20px;
@@ -176,9 +166,9 @@ button:hover {
 /*footer*/
 .foot {
   background-color: black;
-  margin-top: 70%;
+  margin-top: 63%;
   width: 100%;
-  height: 30%;
+  height: 20%;
   border-radius: 0px 20px 20px 0px;
 }
 
@@ -241,7 +231,6 @@ button:hover {
 .flex-space-evenly {
   justify-content: space-evenly;
 }
-
 .center {
   text-align: center;
   align-content: center;
@@ -254,7 +243,6 @@ button:hover {
 .left {
   text-align: right;
 }
-
 .column {
   flex-direction: column;
 }
@@ -334,17 +322,14 @@ button:hover {
   height: 25%;
   border-radius: 20px;
 }
-
 .-child2 {
   margin-top: -100px;
 }
-
 .admin-panel-buttons {
-
   width: 100%;
 }
 
-.admin-panel-btn {
+.admin-panel-btn  {
   font-size: 26px;
   width: 130px;
 }
@@ -358,6 +343,7 @@ button:hover {
   border: 0px;
   background-color: var(--light-gray);
   padding: 20px;
+  padding: 20px;
   font-size: 26px;
   outline: none;
 }
@@ -365,7 +351,7 @@ button:hover {
 .primary-input::placeholder {
   color: var(--gray);
   font-size: 18px;
-  color: #5E5E5E;
+  color: #5e5e5e;
 }
 
 .form-container {
@@ -428,14 +414,14 @@ button:hover {
   font-size: 26px;
 }
 
-.user-pass-icons {
+.user-pass-icons  {
   padding-left: 20px;
   font-size: 26px;
   border-radius: 50px;
   background-color: var(--light-gray);
 }
 
-.login-section-container {
+.login-section-container  {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -447,8 +433,6 @@ button:hover {
   background-color: black;
   width: 100%;
   margin-top: auto;
-  /* height: 30%; */
-  /* border-radius: 0px 20px 20px 0px; */
 }
 
 .login-section-body {
@@ -458,7 +442,6 @@ button:hover {
   justify-content: center;
   align-content: center;
   min-height: 100vh;
-  /* justify-content: center; */
 }
 
 .login-foot-items {
@@ -470,7 +453,9 @@ button:hover {
   margin: 15px;
   font-size: 35px;
   padding: 15px;
+  padding: 15px;
   border-radius: 100%;
+  text-decoration: none;
   text-decoration: none;
 }
 
@@ -499,16 +484,16 @@ button:hover {
   align-self: center;
 }
 
-/* for login and signup */
+/* End of section */
+
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-width: 800px;
   position: relative;
-  margin: 25% auto 0 auto;
+  margin: 15% auto 0 auto;
   box-sizing: border-box
 }
-
 
 /* Hide the images by default */
 .mySlides {
@@ -607,3 +592,5 @@ button:hover {
     opacity: 1
   }
 }
+
+/* End of section */
