@@ -369,13 +369,11 @@ function Search(input) {
   if (!checkSearchURL(link)) {
     window.location.href += "?s=" + input.value;
   } else {
-    let new_link = "";
+    let new_link = "/assets/pages/Restaurants.html";
     for (let i = 0; i < link.length; i++) {
       if (link[i] == "?") {
         new_link += "?s=" + input.value;
         break;
-      } else {
-        new_link += link[i];
       }
     }
     window.location.href = new_link;
@@ -504,10 +502,10 @@ function DisplayRest(url) {
   name.innerText = rest[index];
   logo.src = src[index];
   let list = document.createElement("ul");
-  let menu_list = menus[index]
+  let menu_list = menus[index];
   for (i in menu_list) {
     let item = document.createElement("li");
-    item.innerText = menu_list[i].plate_name + " " +menu_list[i].price;
+    item.innerText = menu_list[i].plate_name + " " + menu_list[i].price;
     list.appendChild(item);
   }
   menu.appendChild(list);
