@@ -377,7 +377,7 @@ function SearchURL(input) {
   for (let i = index; i < input.length; i++) {
     result += input[i];
   }
-  result = result.replace("%20"," ");
+  result = result.replace("%20", " ");
   return result;
 }
 
@@ -435,7 +435,7 @@ function loadSearch(res) {
   let section = document.createElement("div");
   section.classList.add("display-section");
   for (let i = 0; i < max; i++) {
-    console.log(res.innertext)
+    console.log(res.innertext);
     if (name[i].includes(res.value)) {
       let card = document.createElement("div");
       let img_card = document.createElement("div");

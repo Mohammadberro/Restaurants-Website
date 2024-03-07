@@ -60,3 +60,27 @@ display: flex;
 justify-content: center;
 
 }
+@media screen and (min-width: 280px) and (max-width:900px) {
+  .admin-panel{
+    position: static;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+  }
+  .admin-panel-img{
+    display:none;
+  }
+  .user-panel-img{
+    display:none;
+  }
+  .user-info-content{
+    margin-top:15px;
+    gap
+  }
+  .panel{
+    position: static;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+  }
+  }

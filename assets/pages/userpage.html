@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/3466402afb.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/scripts/script.js"></script>
     <title>User</title>
   </head>
   <body>
@@ -23,7 +24,11 @@
             ><i class="fa-solid fa-utensils logo dark-gray-bg"></i
           ></a>
         </div>
-        <div class="child"><button class="dark-gray-bg"><a href="/assets/pages/signin.html" class="white-text">Login</a></button></div>
+        <div class="child">
+          <button class="dark-gray-bg">
+            <a href="/assets/pages/signin.html" class="white-text">Login</a>
+          </button>
+        </div>
       </div>
       <ul class="nav-items">
         <li>
@@ -33,7 +38,8 @@
         </li>
         <li>
           <a href="/assets/pages/Restaurants.html" class="transparent"
-            ><i class="hr-lines hidden" data-nav="nav-buttons"></i>Restaurants</a
+            ><i class="hr-lines hidden" data-nav="nav-buttons"></i
+            >Restaurants</a
           >
         </li>
         <li class="hidden" id="pofile">
@@ -67,11 +73,8 @@
           <h1>Favorites</h1>
         </div>
         <div class="panel-buttons child flex-space-around">
-          <div class="user-info-content"><h1>Restaurant Name</h1></div>
-          <div class="user-info-content">
-            <button class="accent-bg admin-panel-btn" id="open-fav">
-              Open
-            </button>
+          <div class="user-info-content" id="favorite">
+            </div>
           </div>
         </div>
       </div>
@@ -85,7 +88,7 @@
           <div class="user-info flex-space-around container">
             <div class="user-info-content"><h1>User name</h1></div>
             <div class="user-info-content">
-              <button class="accent-bg admin-panel-btn" id="edit-name">
+              <button class="accent-light-bg admin-panel-btn" id="edit-name">
                 Edit
               </button>
             </div>
@@ -96,7 +99,7 @@
               <h1>Password</h1>
             </div>
             <div class="user-info-content">
-              <button class="accent-bg admin-panel-btn" id="edit-pass">
+              <button class="accent-light-bg admin-panel-btn" id="edit-pass">
                 Edit
               </button>
             </div>
