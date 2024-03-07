@@ -2,7 +2,7 @@
   --main: #88bbaf;
   --main-light: #b8f5e7;
   --accent: #cd6346;
-  -accent-light: #f9e4dd;
+  --accent-light: #f9e4dd;
   --dark-gray: #7e8594;
   --gray: #c8c8c8;
   --light-gray: #d9d9d9;
@@ -20,6 +20,10 @@
 }
 body {
   background-color: var(--off-white);
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+
 }
 a {
   text-decoration: none;
@@ -156,9 +160,10 @@ button:hover {
 /*footer*/
 .foot {
   background-color: black;
-  margin-top: 63%;
   width: 100%;
-  height: 20%;
+  position: absolute;
+  bottom: 0;
+  height: fit-content;
   border-radius: 0px 20px 20px 0px;
 }
 .foot-items {
@@ -428,3 +433,51 @@ button:hover {
   align-self: center;
 }
 /* for login and signup */
+
+@media screen and (min-width: 280px) and (max-width:900px) {
+.nav-bar{
+  width:100%;
+  height:10%;
+  margin-top:0%;
+}
+.nav-items{
+  display:none
+}
+.foot{
+  border-radius:20px 20px 0px 0px;
+  position:fixed;
+ bottom:0;
+  width:100%;
+  height:fit-content;
+}
+.main-content{
+  margin-left: 5%;
+  margin-top: 15%;
+  align-items: center;
+  text-align: center;
+}
+.big-card{
+  margin-bottom: 20%;
+}
+.admin-panel{
+  position: static;
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 80%;
+}
+.panel{
+  position: static;
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 80%;
+}
+.card-img{
+  width: 1%;
+}
+.display-section{
+  gap: 100px;
+}
+.circle{
+  margin-top:-20%;
+}
+}
