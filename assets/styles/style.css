@@ -492,7 +492,7 @@ button:hover {
 /* Caption text */
 .mySlides .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 45px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -503,8 +503,8 @@ button:hover {
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+  font-size: 26px;
+  padding: 12px 12px;
   position: absolute;
   top: 0;
 }

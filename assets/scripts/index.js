@@ -1,3 +1,5 @@
+// IndexPage
+
 let slides = document.getElementsByClassName("mySlides");
 let dots = document.getElementsByClassName("dot");
 let numbertext = document.getElementsByClassName("numbertext");
