@@ -450,4 +450,34 @@ button:hover {
   width:100%;
   height:fit-content;
 }
+.main-content{
+  margin-left: 5%;
+  margin-top: 15%;
+  align-items: center;
+  text-align: center;
+}
+.big-card{
+  margin-bottom: 20%;
+}
+.admin-panel{
+  position: static;
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 80%;
+}
+.panel{
+  position: static;
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 80%;
+}
+.card-img{
+  width: 1%;
+}
+.display-section{
+  gap: 100px;
+}
+.circle{
+  margin-top:-20%;
+}
 }
