@@ -1,64 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Sansita One"
-      rel="stylesheet"
-    />
-    <script src="/assets/scripts/script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/3466402afb.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="nav" class="nav-bar">
-      <div class="head container flex-space-between">
-        <div class="child">
-          <a href="/index.html" id="logo"
-            ><i class="fa-solid fa-utensils logo dark-gray-bg"></i
-          ></a>
-        </div>
-        <div class="child"><button class="dark-gray-bg"><a href="/assets/pages/signin.html" class="white-text">Login</a></button></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/styles/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Sansita One" rel="stylesheet" />
+  <script src="/assets/scripts/script.js"></script>
+  <script src="https://kit.fontawesome.com/3466402afb.js" crossorigin="anonymous"></script>
+  <title>RESTAURANTS</title>
+  <link rel="icon" href="assets/images/logo.png" sizes="any" type="image/png">
+  <script defer src="/assets/scripts/index.js"></script>
+</head>
+
+<body>
+  <div id="nav" class="nav-bar">
+    <div class="head container flex-space-between">
+      <div class="child">
+        <a href="/index.html" id="logo"><i class="fa-solid fa-utensils logo dark-gray-bg"></i></a>
       </div>
-      <ul class="nav-items">
-        <li>
-          <a href="/index.html" class="transparent"
-            ><i class="hr-lines" data-nav="nav-buttons"></i>Home</a
-          >
-        </li>
-        <li>
-          <a href="/assets/pages/Restaurants.html" class="transparent"
-            ><i class="hr-lines hidden" data-nav="nav-buttons"></i>Restaurants</a
-          >
-        </li>
-        <li class="hidden" id="pofile">
-          <a href="/assets/pages/Restaurants.html" class="transparent"
-            ><i class="hr-lines hidden" data-nav="nav-buttons"></i>Profile</a
-          >
-        </li>
-      </ul>
-      <div class="foot">
-        <div class="foot-items">
-          <a href="#" class="socail"
-            ><i class="fa-brands fa-facebook white-text"></i
-          ></a>
-          <a href="#" class="socail">
-            <i class="fa-brands fa-tiktok white-text"></i
-          ></a>
-          <a href="#" class="socail"
-            ><i class="fa-brands fa-instagram white-text"></i
-          ></a>
-          <a href="#" class="socail"
-            ><i class="fa-brands fa-twitter white-text"></i
-          ></a>
-        </div>
+      <div class="child"><button class="dark-gray-bg"><a href="/assets/pages/signin.html"
+            class="white-text">Login</a></button></div>
+    </div>
+    <ul class="nav-items">
+      <li>
+        <a href="/index.html" class="transparent"><i class="hr-lines" data-nav="nav-buttons"></i>Home</a>
+      </li>
+      <li>
+        <a href="/assets/pages/Restaurants.html" class="transparent"><i class="hr-lines hidden"
+            data-nav="nav-buttons"></i>Restaurants</a>
+      </li>
+      <li class="hidden" id="pofile">
+        <a href="/assets/pages/Restaurants.html" class="transparent"><i class="hr-lines hidden"
+            data-nav="nav-buttons"></i>Profile</a>
+      </li>
+    </ul>
+    <div class="foot">
+      <div class="foot-items">
+        <a href="#" class="socail"><i class="fa-brands fa-facebook white-text"></i></a>
+        <a href="#" class="socail">
+          <i class="fa-brands fa-tiktok white-text"></i></a>
+        <a href="#" class="socail"><i class="fa-brands fa-instagram white-text"></i></a>
+        <a href="#" class="socail"><i class="fa-brands fa-twitter white-text"></i></a>
       </div>
     </div>
-    <div class="main-content"></div>
-  </body>
+  </div>
+  <div class="main-content">
+    <div id="search-icon-container">
+      <a href="/assets/pages/Restaurants.html"><img src="assets/images/search-bar-icon.png"></a>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="assets/images/campus.jpg" class="slideshow-images">
+        <div class="text">campus</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="assets/images/Cafe.jpg" class="slideshow-images">
+        <div class="text">Cafe</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="assets/images/SteakHouse.jpg" class="slideshow-images">
+        <div class="text">SteakHouse</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="assets/images/shakeshake.jpg" class="slideshow-images">
+        <div class="text">shakeshack</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dots-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    
+    <div class="view-more-btn-container">
+      <a href="/assets/pages/Restaurants.html">
+        <button type="submit" class="view-more-btn">View more</button>
+      </a>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+
 </html>

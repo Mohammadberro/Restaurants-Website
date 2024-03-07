@@ -160,11 +160,12 @@ button:hover {
 /*footer*/
 .foot {
   background-color: black;
+  margin-top: 70%;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  height: fit-content;
+  height: 16%;
   border-radius: 0px 20px 20px 0px;
+  bottom: 0;
+  position: absolute;
 }
 .foot-items {
   font-size: 40px;
@@ -320,6 +321,7 @@ button:hover {
   border: 0px;
   background-color: var(--light-gray);
   padding: 20px;
+  padding: 20px;
   font-size: 26px;
   outline: none;
 }
@@ -363,13 +365,15 @@ button:hover {
   color: white;
   font-size: 26px;
 }
-.user-pass-icons {
+
+.user-pass-icons  {
   padding-left: 20px;
   font-size: 26px;
   border-radius: 50px;
   background-color: var(--light-gray);
 }
-.login-section-container {
+
+.login-section-container  {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -381,8 +385,6 @@ button:hover {
   background-color: black;
   width: 100%;
   margin-top: auto;
-  /* height: 30%; */
-  /* border-radius: 0px 20px 20px 0px; */
 }
 
 .login-section-body {
@@ -392,7 +394,6 @@ button:hover {
   justify-content: center;
   align-content: center;
   min-height: 100vh;
-  /* justify-content: center; */
 }
 
 .login-foot-items {
@@ -404,7 +405,9 @@ button:hover {
   margin: 15px;
   font-size: 35px;
   padding: 15px;
+  padding: 15px;
   border-radius: 100%;
+  text-decoration: none;
   text-decoration: none;
 }
 
@@ -432,8 +435,147 @@ button:hover {
   align-items: center;
   align-self: center;
 }
-/* for login and signup */
 
+/* End of section */
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 10% auto 0 auto;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 1%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.mySlides .text {
+  color: #f2f2f2;
+  font-size: 45px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 26px;
+  padding: 12px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slideshow-images {
+  width: 1000px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#search-icon-container {
+  cursor: pointer;
+  position: absolute;
+  top: 3%;
+  right: 1%;
+}
+
+#search-icon-container:hover {
+  transform: scale(1.1);
+}
+
+.view-more-btn-container {
+  width: 100%;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.view-more-btn {
+  cursor: pointer;
+  height: 60px;
+  width: 276px;
+  background-color: #88BBAF;
+  color: white;
+  font-size: 26px;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* End of section */
 @media screen and (min-width: 280px) and (max-width:900px) {
 .nav-bar{
   width:100%;

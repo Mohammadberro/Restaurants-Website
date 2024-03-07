@@ -12,24 +12,25 @@
       src="https://kit.fontawesome.com/3466402afb.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/scripts/script.js"></script>
     <title>Document</title>
+    <script defer src="../scripts/form.js"></script>
   </head>
   <body class="login-section-body">
-    <div class="child"><a href="/index.html" class="fa-solid fa-utensils login-logo dark-gray-bg"></a></div>
+    <div class="child"><a href="/../../index.html" class="fa-solid fa-utensils login-logo dark-gray-bg"></a></div>
     <div class="form-container">
         <form id="sign-in-form" class="">
             <h1>Login</h1>
             <div class="inputs">
                 <div>
-                <i class="fa-solid fa-user user-pass-icons"><input placeholder="Username" class="primary-input" required/></i>
+                <i class="fa-solid fa-user user-pass-icons"><input placeholder="Username" class="primary-input" required id="loginusername"/></i>
                 </div>
                 <div>
-                <i class="fa-solid fa-lock user-pass-icons"><input type="password" class="primary-input pass-input" required placeholder="Password"/>
+                <i class="fa-solid fa-lock user-pass-icons"><input type="password" 
+                  class="primary-input pass-input" required placeholder="Password" id="loginpassword"/>
                     <i class="fa-solid fa-eye invisible-logo"></i></i>
                 </div>
             </div>
-            <button type="submit" class="primary-login-btn">Login</button>
+            <button type="button" class="primary-login-btn" onclick="login()">Login</button>
             <h2 class="pre-signup">Don't have an account? <a class="anchor-signup" href="signup.html">&nbsp;Sign Up</a></h2>
         </form>
     </div>

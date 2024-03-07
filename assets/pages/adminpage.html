@@ -12,8 +12,8 @@
       src="https://kit.fontawesome.com/3466402afb.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/scripts/script.js"></script>
     <title>Admin</title>
+    <script src="../scripts/adminpanel.js"></script>
   </head>
   <body>
     <div id="nav" class="nav-bar">
@@ -37,8 +37,7 @@
         </li>
         <li>
           <a href="/assets/pages/Restaurants.html" class="transparent"
-            ><i class="hr-lines hidden" data-nav="nav-buttons"></i
-            >Restaurants</a
+            ><i class="hr-lines hidden" data-nav="nav-buttons"></i>Restaurants</a
           >
         </li>
         <li class="hidden" id="pofile">
@@ -70,9 +69,10 @@
           <h1>Users</h1>
         </div>
         <div class="admin-panel-buttons child flex-space-around">
-          <div><button class="dark-blue-bg admin-panel-btn">Add</button></div>
+          <div><button class="dark-blue-bg admin-panel-btn" id="popup-adduser">Add</button></div>
+          <div><button class="dark-blue-bg admin-panel-btn" id="popup-addrest">View</button></div>
           <div>
-            <button class="dark-blue-bg admin-panel-btn">Remove</button>
+            <button class="dark-blue-bg admin-panel-btn" id="popup-removeuser">Remove</button>
           </div>
         </div>
       </div>
@@ -81,9 +81,10 @@
           <h1>Restaurants</h1>
         </div>
         <div class="admin-panel-buttons child flex-space-around">
-          <div><button class="dark-blue-bg admin-panel-btn">Add</button></div>
+          <div><button class="dark-blue-bg admin-panel-btn" id="popup-addrest">Add</button></div>
+          <div><button class="dark-blue-bg admin-panel-btn" id="popup-addrest">View</button></div>
           <div>
-            <button class="dark-blue-bg admin-panel-btn">Remove</button>
+            <button class="dark-blue-bg admin-panel-btn" id="popup-removerest">Remove</button>
           </div>
         </div>
       </div>
