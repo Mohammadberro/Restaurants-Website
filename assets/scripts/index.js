@@ -7,9 +7,18 @@ function plusSlides(n) {
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
+function middleSlide(n) {
   showSlides(slideIndex = n);
 }
+
+function previousSlide(){
+
+}
+
+function nextSlide(){
+  
+}
+
 
 function showSlides(n) {
   let i;

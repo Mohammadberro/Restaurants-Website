@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     ></script>
     <title>Document</title>
+    <script defer src="../scripts/form.js"></script>
   </head>
   <body class="login-section-body">
     <div class="child"><a href="/index.html" class="fa-solid fa-utensils login-logo dark-gray-bg"></a></div>
@@ -21,18 +22,19 @@
             <h1>Sign Up</h1>
             <div class="inputs">
                 <div>
-                <i class="fa-solid fa-user user-pass-icons"><input placeholder="Username" class="primary-input" required/></i>
+                <i class="fa-solid fa-user user-pass-icons"><input placeholder="Username" class="primary-input" required id="username"/></i>
                 </div>
                 <div>
-                <i class="fa-solid fa-lock user-pass-icons"><input type="password" class="primary-input pass-input" required placeholder="Password"/>
+                <i class="fa-solid fa-lock user-pass-icons"><input type="password" class="primary-input pass-input" required placeholder="Password" id="password"/>
                     <i class="fa-solid fa-eye invisible-logo"></i></i>
                 </div>
                 <div>
-                    <i class="fa-solid fa-lock user-pass-icons"><input type="password" class="primary-input pass-input" required placeholder="Confirm Password"/>
+                    <i class="fa-solid fa-lock user-pass-icons"><input type="password" class="primary-input pass-input" 
+                      required placeholder="Confirm Password" id="confirm-password"/>
                         <i class="fa-solid fa-eye invisible-logo"></i></i>
                     </div>
             </div>
-            <button type="submit" class="primary-login-btn">Register</button>
+            <button type="button" class="primary-login-btn" onclick="signUp()">Register</button>
         </form>
     </div>
     <div class="login-section-footer">

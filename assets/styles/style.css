@@ -2,7 +2,7 @@
   --main: #88bbaf;
   --main-light: #b8f5e7;
   --accent: #cd6346;
-  -accent-light: #f9e4dd;
+  --accent-light: #f9e4dd;
   --dark-gray: #7e8594;
   --gray: #c8c8c8;
   --light-gray: #d9d9d9;
@@ -166,10 +166,12 @@ button:hover {
 /*footer*/
 .foot {
   background-color: black;
-  margin-top: 63%;
+  margin-top: 70%;
   width: 100%;
-  height: 20%;
+  height: 16%;
   border-radius: 0px 20px 20px 0px;
+  bottom: 0;
+  position: absolute;
 }
 
 .foot-items {
@@ -578,8 +580,9 @@ button:hover {
   animation-duration: 1.5s;
 }
 
-.test {
+.slideshow-images {
   width: 100%;
+  border-radius: 20px;
 }
 
 
