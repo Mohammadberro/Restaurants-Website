@@ -34,7 +34,7 @@
 }
 
 .admin-panel-img {
-  border: var(--purple) solid 20px;
+  background-color: var(--purple) ;
   position: absolute;
   left: 0;
   top: 0;
@@ -44,7 +44,7 @@
   width: 250px;
 }
 .user-panel-img {
-  border: var(--accent) solid 20px;
+  background-color: var(--accent) ;
   position: absolute;
   right: 0;
   top: 0;
