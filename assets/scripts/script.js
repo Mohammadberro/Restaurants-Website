@@ -344,7 +344,7 @@ function checkDisplayURL(url) {
   }
 }
 function checkLogin(url) {
-  if (url.includes("?u=")) {
+  if (url.includes("?u=") || url.includes("?a=")) {
     return true;
   } else {
     return false;
@@ -383,11 +383,18 @@ function SearchURL(input) {
 
 function favorite() {
   let rest = document.getElementById("favorite");
+  let url = window.location.href;
+if(checkLogin(url)){
   if (rest.style.filter != "grayscale(1)") {
     rest.style.filter = "grayscale(1)";
   } else {
     rest.style.filter = "grayscale(0)";
   }
+}
+else{
+  let link = "/assets/pages/signup.html"
+  window.location.href =  link;
+}
 }
 
 function loadAllRest() {
@@ -415,7 +422,23 @@ function loadAllRest() {
     btn.innerText = "Open";
     btn.href = "/assets/pages/DisplayRest.html/";
     btn.onclick = () => {
+      let url = window.location.href;
+      if(checkLogin(url)){
+        let user = ""
+        let index = 0;
+        for ( let i =0;i<url.length;i++){
+          if(url[i] == "?"){
+            index= i
+          }          
+        }
+        for ( let i =index;i<url.length;i++){
+          user += url[i];
+        }
+        window.location.href = "/assets/pages/DisplayRest.html"+user+"?r="+btn.id;
+      }
+      else{
       window.location.href = "/assets/pages/DisplayRest.html?r=" + btn.id;
+      }
     };
 
     img_card.appendChild(img);
@@ -494,3 +517,4 @@ function DisplayRest(url) {
   }
   menu.appendChild(list);
 }
+
