@@ -13,7 +13,6 @@
       src="https://kit.fontawesome.com/3466402afb.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/scripts/script.js"></script>
     <title>Admin</title>
   </head>
   <body>
@@ -24,11 +23,7 @@
             ><i class="fa-solid fa-utensils logo dark-gray-bg"></i
           ></a>
         </div>
-        <div class="child">
-          <button class="dark-gray-bg">
-            <a href="/assets/pages/signin.html" class="white-text">Login</a>
-          </button>
-        </div>
+        
       </div>
       <ul class="nav-items">
         <li>
@@ -38,8 +33,7 @@
         </li>
         <li>
           <a href="/assets/pages/Restaurants.html" class="transparent"
-            ><i class="hr-lines hidden" data-nav="nav-buttons"></i
-            >Restaurants</a
+            ><i class="hr-lines hidden" data-nav="nav-buttons"></i>Restaurants</a
           >
         </li>
         <li class="hidden" id="pofile">
@@ -89,22 +83,24 @@
           <button class="dark-blue-bg ">Close</button></div>
         </div>
 
-      <!-- view user  -->
-      <div class="popup-info child column flex-space-between " id="viewuser-panel">
-        <div id="viewUser-container">
-          <!-- <div><h2>ashraf sharaf</h2><button onclick="Removeuser()">remove</button></div>
-          <div><h2>ashraf sharaf</h2><button onclick="Removeuser()">remove</button></div>
-          <div><h2>ashraf sharaf</h2><button onclick="Removeuser()">remove</button></div>
-          <div><h2>ashraf sharaf</h2><button onclick="Removeuser()">remove</button></div> -->
-        </div>
-        <button class="dark-blue-bg">Close</button>
-      </div>
+      <!-- remove user  -->
+      <div class="popup-info child column flex-space-between hidden" id="removeuser-panel"></div>
+
 
       <!-- remove rest  -->
-      <div class="popup-info child column flex-space-between hidden" id="viewrest-panel"></div>
+      <div class="popup-info child column flex-space-between hidden" id="removerest-panel"></div>
     </div>
 
-    <div class="admin-panel-img"><img src="../images/one.avif" /></div>
+
+
+
+
+
+
+     
+      <div class="admin-panel-img"><img src="../images/one.avif" /></div>
+
+
 
        <!-- admin panel control on users -->
       <div class="admin-panel-child column child flex-space-around">
@@ -112,10 +108,6 @@
           <h1>Users</h1>
         </div>
         <div class="admin-panel-buttons child flex-space-around">
-          <div><button class="dark-blue-bg admin-panel-btn">Add</button></div>
-          <div>
-            <button class="dark-blue-bg admin-panel-btn">Remove</button>
-=======
           <div><button class="dark-blue-bg admin-panel-btn" id="popup-adduser">Add</button></div>
           <div><button class="dark-blue-bg admin-panel-btn" id="popup-addrest">View</button></div>
           <div>
@@ -129,21 +121,15 @@
           <h1>Restaurants</h1>
         </div>
         <div class="admin-panel-buttons child flex-space-around">
-          <div><button class="dark-blue-bg admin-panel-btn">Add</button></div>
-          <div>
-            <button class="dark-blue-bg admin-panel-btn">Remove</button>
-=======
           <div><button class="dark-blue-bg admin-panel-btn" id="popup-addrest">Add</button></div>
           <div><button class="dark-blue-bg admin-panel-btn" id="popup-addrest">View</button></div>
           <div>
             <button class="dark-blue-bg admin-panel-btn" id="popup-removerest">Remove</button>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
-  <script src="../scripts/adminpanel.js"></script>
-</body>
-
+    <script
+    src="../scripts/adminpanel.js" ></script>
+  </body>
 </html>
