@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/admin_user.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Sansita One"
       rel="stylesheet"
@@ -65,50 +64,7 @@
         </div>
       </div>
     </div>
-   
-    <div class="panel child flex-space-around purple-bg">
-
-       <!-- hidden panels  -->
-      <div class="popup  container column flex-space-around light-gray-bg" id="admin-panel">
-
-        <!-- add user  -->
-        <div class="popup-info child column flex-space-between " id="adduser-panel">
-          <h1>Enter Information</h1>
-          <input class="panel-inputs" type="text" name="username" id="add-username" placeholder="Username">
-          <input class="panel-inputs" type="text" name="password" id="add-userpass" placeholder="Password">
-         <div> <button class="dark-blue-bg " id="add-user" onclick="Adduser()" >Add</button>
-          <button class="dark-blue-bg ">Close</button></div>
-        </div>
-         
-        <!-- add restaurants -->
-        <div class="popup-info child column flex-space-between hidden" id="addrest-panel">
-          <h1>Enter Information</h1>
-          <input class="panel-inputs" type="text" name="username" id="add-restname" placeholder="Restaurant Name">
-          <input class="panel-inputs" type="text" name="password" id="add-restpass" placeholder="Password">
-         <div> <button class="dark-blue-bg " id="add=rest">Add</button>
-          <button class="dark-blue-bg ">Close</button></div>
-        </div>
-
-      <!-- remove user  -->
-      <div class="popup-info child column flex-space-between hidden" id="removeuser-panel"></div>
-
-
-      <!-- remove rest  -->
-      <div class="popup-info child column flex-space-between hidden" id="removerest-panel"></div>
-    </div>
-
-
-
-
-
-
-
-     
-      <div class="admin-panel-img"><img src="../images/one.avif" /></div>
-
-
-
-       <!-- admin panel control on users -->
+    <div class="admin-panel child flex-space-around purple-bg">
       <div class="admin-panel-child column child flex-space-around">
         <div>
           <h1>Users</h1>
@@ -120,7 +76,6 @@
           </div>
         </div>
       </div>
-      <!-- admin panel control on restaurants -->
       <div class="admin-panel-child -child2 column child flex-space-around">
         <div>
           <h1>Restaurants</h1>
@@ -133,7 +88,5 @@
         </div>
       </div>
     </div>
-    <script
-    src="../scripts/adminpanel.js" ></script>
   </body>
 </html>

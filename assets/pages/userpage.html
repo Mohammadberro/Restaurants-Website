@@ -67,6 +67,109 @@
     </div>
 
     <div class="panel child flex-space-around accent-bg">
+      <div class="user-panel-img"><img src="../images/one.avif" /></div>
+      <div class="panel-child column child flex-space-around">
+        <div>
+          <h1>Favorites</h1>
+        </div>
+        <div class="panel-buttons child flex-space-around">
+          <div class="user-info-content" id="favorite"></div>
+        </div>
+      </div>
+      <div class="panel-child column child flex-space-around ">
+        <div>
+          <h1>User Info</h1>
+        </div>
+
+        <div class="panel-buttons column flex-space-around">
+          <div class="user-info flex-space-around container">
+            <div class="user-info-content"><h1>User name</h1></div>
+            <div class="user-info-content">
+              <button class="accent-light-bg admin-panel-btn" id="edit-name">
+                Edit
+              </button>
+            </div>
+          </div>
+
+          <div class="user-info flex-space-around container">
+            <div class="user-info-content">
+              <h1>Password</h1>
+            </div>
+            <div class="user-info-content">
+              <button class="accent-light-bg admin-panel-btn" id="edit-pass">
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/admin_user.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sansita One"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3466402afb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>User</title>
+  </head>
+  <body>
+    <div id="nav" class="nav-bar">
+      <div class="head container flex-space-between">
+        <div class="child">
+          <a href="/index.html" id="logo"
+            ><i class="fa-solid fa-utensils logo dark-gray-bg"></i
+          ></a>
+        </div>
+      
+      </div>
+      <ul class="nav-items">
+        <li>
+          <a href="/index.html" class="transparent"
+            ><i class="hr-lines" data-nav="nav-buttons"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="/assets/pages/Restaurants.html" class="transparent"
+            ><i class="hr-lines hidden" data-nav="nav-buttons"></i>Restaurants</a
+          >
+        </li>
+        <li class="hidden" id="pofile">
+          <a href="/assets/pages/Restaurants.html" class="transparent"
+            ><i class="hr-lines hidden" data-nav="nav-buttons"></i>Profile</a
+          >
+        </li>
+      </ul>
+      <div class="foot">
+        <div class="foot-items">
+          <a href="#" class="socail"
+            ><i class="fa-brands fa-facebook white-text"></i
+          ></a>
+          <a href="#" class="socail">
+            <i class="fa-brands fa-tiktok white-text"></i
+          ></a>
+          <a href="#" class="socail"
+            ><i class="fa-brands fa-instagram white-text"></i
+          ></a>
+          <a href="#" class="socail"
+            ><i class="fa-brands fa-twitter white-text"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel child flex-space-around accent-bg">
 
        <!-- hidden panels  -->
        <div class="popup  container column flex-space-around dark-gray-bg hidden" id="user-panel">
@@ -101,10 +204,16 @@
           <h1>Favorites</h1>
         </div>
         <div class="panel-buttons child flex-space-around">
-          <div class="user-info-content" id="favorite"></div>
+          <div class="user-info-content"><h1>Restaurant Name</h1></div>
+          <div class="user-info-content">
+            <button class="accent-bg admin-panel-btn" id="open-fav">
+              Open
+            </button>
+          </div>
         </div>
       </div>
-      <div class="panel-child column child flex-space-around ">
+
+      <div class="panel-child -child2 column child flex-space-around">
         <div>
           <h1>User Info</h1>
         </div>
@@ -113,7 +222,7 @@
           <div class="user-info flex-space-around container">
             <div class="user-info-content"><h1>User name</h1></div>
             <div class="user-info-content">
-              <button class="accent-light-bg admin-panel-btn" id="edit-name">
+              <button class="accent-bg admin-panel-btn" id="popup-editname">
                 Edit
               </button>
             </div>
@@ -124,7 +233,7 @@
               <h1>Password</h1>
             </div>
             <div class="user-info-content">
-              <button class="accent-light-bg admin-panel-btn" id="edit-pass">
+              <button class="accent-bg admin-panel-btn" id="popup-editpass">
                 Edit
               </button>
             </div>
