@@ -118,6 +118,18 @@ button:hover {
   align-items: center;
   padding: 10px;
 }
+.big-card2 {
+  border-radius: 20px;
+  width: 80%;
+  height: 100%;
+  max-height: 100%;
+  margin-top: 10%;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20%;
+  align-items:center;
+  text-align:center
+}
 .card {
   background-color: white;
   border-radius: 20px;
@@ -533,8 +545,8 @@ button:hover {
 }
 
 .slideshow-images {
-  width: 1000px;
-  height: 600px;
+  width: 940px;
+  height: 400px;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -614,7 +626,7 @@ button:hover {
   width: 80%;
 }
 .card-img{
-  width: 1%;
+  width: 150px;
 }
 .display-section{
   gap: 100px;
@@ -622,4 +634,17 @@ button:hover {
 .circle{
   margin-top:-20%;
 }
+.slideshow-container{
+  margin-right:60%;
+  margin-bottom:0%;
+  width:80%;
+  height:50%;
+}
+  .user-panel-img{
+    display:none;
+  }
+  .user-info-content{
+    margin-top:15px;
+  }
+
 }
