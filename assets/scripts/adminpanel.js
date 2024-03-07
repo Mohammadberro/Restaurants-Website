@@ -1,15 +1,16 @@
 // buttons to open the hidden panels
 const AddUser = document.getElementById("popup-adduser");
-const RemoveUser = document.getElementById("popup-removeuser");
+const ViewUser = document.getElementById("popup-viewuser");
 const AddRest = document.getElementById("popup-addrest");
-const RemoveRest = document.getElementById("popup-removerest");
+const ViewRest = document.getElementById("popup-viewrest");
 
 const adminPanel = document.getElementById("admin-panel");
 
 const addUseropanel = document.getElementById("adduser-panel");
 const addRestpanel = document.getElementById("addrest-panel");
-const removeUserpanel = document.getElementById("removeuser-panel");
-const removeRestpanel = document.getElementById("removerest-panel");
+const ViewUserpanel = document.getElementById("viewuser-panel");
+const ViewRestpanel = document.getElementById("viewrest-panel");
+
 
 // events to open the hidden panels
 AddUser.addEventListener("click", function () {
@@ -18,16 +19,18 @@ AddUser.addEventListener("click", function () {
 AddRest.addEventListener("click", function () {
   Showhidden(addRestpanel);
 });
-RemoveRest.addEventListener("click", function () {
-  Showhidden(removeRestpanel);
+ViewRest.addEventListener("click", function () {
+  Showhidden(ViewRestpanel);
 });
-RemoveUser.addEventListener("click", function () {
-  Showhidden(removeUserpanel);
+ViewUser.addEventListener("click", function () {
+  Showhidden(ViewUserpanel);
+  Viewuser();
 });
 
-let user = { name: "", password: "" };
-// let users = [user, user, user, user, user, user, user, user, user, user, user];
-let users = [];
+
+let user = { name: "idiotssssss", password: "" };
+let users = [user, user, user, user];
+// let users = [];
 localStorage.setItem("users", JSON.stringify(users));
 
 function Showhidden(hidden) {
@@ -35,6 +38,7 @@ function Showhidden(hidden) {
   adminPanel.classList.remove("hidden");
 }
 
+// function to add the user by the admin panel 
 function Adduser() {
   let username = document.getElementById("add-username").value;
   let password = document.getElementById("add-userpass").value;
@@ -42,7 +46,14 @@ function Adduser() {
 
   let user = { name: username, password: password };
   name.push(user);
-
   localStorage.setItem("users", JSON.stringify(name));
-  console.log(JSON.parse(localStorage.getItem("users") || "[]"));
+}
+function Viewuser(){
+  let Viewcontainer=document.getElementById("viewUser-container").innerHTML;
+  let namesArray = JSON.parse(localStorage.getItem("users") || "[]");
+  for (let i = 0;i<=namesArray.length;i++){
+    names=namesArray[i];
+    Viewcontainer.innerHTML+=names;
+    console.log(names);
+  }
 }
