@@ -30,24 +30,26 @@ function login(){
   let adminPass = "admin";
 
   if (name.value == adminName && password.value == adminPass){
-
+    
     let url = "../pages/adminpage.html?a=" + name.value;
     window.location.href = url;
   }
 
-  for(let i=0; i < userList.length; i++){
-    if(name.value == userList[i].name 
-      && password.value == userList[i].password){
-        checkUser = true;
-        break
-    }
-  }
-  if (checkUser){
-    let url = "../pages/userpage.html?u=" + name.value;
-    window.location.href = url;
-  }
   else{
-    // console.log(alert);
-    window.alert("wrong username or password")
+    for(let i=0; i < userList.length; i++){
+      if(name.value == userList[i].name 
+        && password.value == userList[i].password){
+          checkUser = true;
+          break
+      }
+    }
+    if (checkUser){
+      let url = "../pages/userpage.html?u=" + name.value;
+      window.location.href = url;
+    }
+    else{
+      // console.log(alert);
+      window.alert("wrong username or password")
+    }
   }
 }
